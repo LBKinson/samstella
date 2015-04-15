@@ -4,15 +4,14 @@
 }
 body {
 	color: #3C3C3D;
-	font-family: arial, sans-serif;
-	font-weight: 200;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
 }
-
 h1 {
 	color: #3C3C3D;
-	font-family: helvetica;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
 	font-size: 3em;
-	font-weight: 400;
 	margin: 0 0 20px;
 	text-align: center;
 }
@@ -41,7 +40,7 @@ hr {
 ul.grid-nav {
 	list-style: none;
 	font-size: .85em;
-	font-weight: 200;
+	font-weight: 300;
 	text-align: center;
 }
 ul.grid-nav li {
@@ -135,3 +134,4 @@ ul.rig.columns-4 li {
 		margin: 0 0 20px;
 	}
 }
+
