@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Future Clarkes</title>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+	<h1>Sam &amp; Stella Are Getting Married!</h1>
+	<div class="container">
+		<ul class="grid-nav">
+			<li><a href="#" data-id="our-story" class="active">About</a></li>
+			<li><a href="#" data-id="where-to-stay">Where To Stay</a></li>
+			<li><a href="#" data-id="what-to-do">What To Do</a></li>
+			<li><a href="#" data-id="rsvp" class="unactive">RSVP</a></li>
+		</ul>
+		
+		<hr />
+		
+		<div id="our-story" class="grid-container" style="display:block;">
+			<h3>Come back for more details soon!</h3>
+			<ul class="rig columns-2">
+				<li>
+					<%= image_tag "samstellaTBD1.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD2.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD3.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD4.jpg" %>
+				</li>
+			</ul>
+		</div>
+		<!--/#our-story-->
+		
+		<div id="where-to-stay" class="grid-container">
+			<h3>Come back for more details soon!</h3>
+			<ul class="rig columns-2">
+				<li>
+					<%= image_tag "samstellaTBD2.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD4.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD1.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD3.jpg" %>
+				</li>
+			</ul>
+		</div>
+		<!--/#where-to-stay-->
+		
+		<div id="what-to-do" class="grid-container">
+			<h3>Come back for more details soon!</h3>
+			<ul class="rig columns-2">
+				<li>
+					<%= image_tag "samstellaTBD4.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD3.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD2.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD1.jpg" %>
+				</li>
+			</ul>
+		</div>
+		<!--/#what-to-do-->
+
+		<div id="rsvp" class="grid-container">
+			<h3>Come back for more details soon!</h3>
+			<ul class="rig columns-2">
+				<li>
+					<%= image_tag "samstellaTBD3.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD1.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD4.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD2.jpg" %>
+				</li>
+			</ul>
+		</div>
+		<!-- /#rsvp -->
+		
+		<hr />
+		
+	</div>
+	<!--/.container-->
+</div>
+<!--/.wrapper-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.grid-nav li a').on('click', function(event){
+		event.preventDefault();
+		$('.grid-container').fadeOut(500, function(){
+			$('#' + gridID).fadeIn(500);
+		});
+		var gridID = $(this).attr("data-id");
+		
+		$('.grid-nav li a').removeClass("active");
+		$(this).addClass("active");
+	});
+});
+</script>
+
+</body>
+</html>
