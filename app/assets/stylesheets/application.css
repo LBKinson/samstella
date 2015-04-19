@@ -56,6 +56,9 @@ ul.grid-nav li a {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 }
+ul.grid-nav li a.rsvp {
+	background: #B5B3AA;
+}
 ul.grid-nav li a:hover {
 	background: #F2E59B;
 }
