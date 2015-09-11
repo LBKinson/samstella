@@ -15,10 +15,22 @@ h1 {
 	margin: 0 0 20px;
 	text-align: center;
 }
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 2em;
+		width: 90%;
+		margin: auto;
+	}
+}
 h3 {
 	color: #3C3C3D;
 	text-align: center;
 	margin: 0 0 20px;
+}
+@media (max-width: 768px) {
+	h3 {
+		font-size: 1em;
+	}
 }
 hr {
 	border-top: 1px solid #ccc;
@@ -33,9 +45,21 @@ hr {
 	width: 100%;
 	padding: 30px 0;
 }
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		width: 100%;
+		padding: 5px 0;
+	}
+}
 .container {
 	width: 500px;
 	margin: 0 auto;
+}
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
 }
 ul.grid-nav {
 	list-style: none;
@@ -64,6 +88,22 @@ ul.grid-nav li a:hover {
 }
 ul.grid-nav li a.active {
 	background: #DEBD02;
+}
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		/*width: 100% !important;  over-ride all li styles */
+		margin: 0 0 20px;
+	}
 }
 .grid-container {
 	display: none;
@@ -105,6 +145,7 @@ ul.rig li p {
 ul.rig.columns-2 li {
 	width: 47.5%; /* this value + 2.5 should = 50% */
 }
+
 /* class for 3 columns */
 ul.rig.columns-3 li {
 	width: 30.83%; /* this value + 2.5 should = 33% */
@@ -113,28 +154,93 @@ ul.rig.columns-3 li {
 ul.rig.columns-4 li {
 	width: 22.5%; /* this value + 2.5 should = 25% */
 }
-
-@media (max-width: 1199px) {
-	.container {
-		width: auto;
-		padding: 0 10px;
+@media only screen and (max-width: 768px) {
+	ul.engaged.rig.columns-2 li {
+		width: 97.5%;
+	}
+	ul.rig.columns-4 li {
+		width: 47.5%;
 	}
 }
-
-@media (max-width: 480px) {
-	ul.grid-nav li {
-		display: block;
-		margin: 0 0 5px;
-	}
-	ul.grid-nav li a {
-		display: block;
-	}
-	ul.rig {
-		margin-left: 0;
-	}
-	ul.rig li {
-		width: 100% !important; /* over-ride all li styles */
-		margin: 0 0 20px;
+img.engaged {
+	height: 50%;
+}
+a.header-link {
+	color: #3C3C3D;
+	text-decoration: none;
+}
+.their-story {
+	font-size: 1em;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	width: 75%;
+}
+.their-story h3 {
+	font-size: 2em;
+}
+img.story1 {
+	width: 25%;
+	float: right;
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+	img.story1 {
+		width: 50%;
 	}
 }
-
+img.story2 {
+	width: 45%;
+	float: right;
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+	img.story2 {
+		width: 100%;
+	}
+}
+.quote {
+	background-color: rgba(181, 179, 170, 0.15);
+	margin: 1% 0 0 5%;
+	padding: 5px;
+	width: 80%;
+}
+.quote p {
+	font-size: 0.8em;
+	padding: 5px;
+}
+@media (max-width: 768px) {
+	.their-story {
+		width: 100%;
+	}
+	.their-story p {
+		font-size: 1em;
+	}
+	.quote {
+		font-size: 0.8em;
+	}
+}
+.their-story p {
+	padding-top: 15px;
+}

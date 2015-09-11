@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 
 <div class="wrapper">
-	<h1>Sam &amp; Stella Are Getting Married!</h1>
+	<h1><a href="/" class="header-link">Sam &amp; Stella Are Getting Married!</a></h1>
 	<div class="container">
 		<ul class="grid-nav">
-			<li><a href="#" data-id="our-story" class="active">About</a></li>
+			<li><a href="#" data-id="landing" class="active" style="display:none;">Lander</a></li>
+			<li><a href="#" data-id="our-story">Our Story</a></li>
 			<li><a href="#" data-id="where-to-stay">Where To Stay</a></li>
 			<li><a href="#" data-id="what-to-do">What To Do</a></li>
 			<li><a href="#" data-id="rsvp" class="rsvp">RSVP</a></li>
@@ -18,20 +19,85 @@
 		
 		<hr />
 		
-		<div id="our-story" class="grid-container" style="display:block;">
-			<h3>Come back soon for more details!</h3>
-			<ul class="rig columns-2">
+		<div id="landing" class="grid-container" style="display:block;">
+			<ul class="engaged rig columns-2">
 				<li>
-					<%= image_tag "samstellaTBD1.jpg" %>
+					<%= image_tag "engaged1.jpg", :class => "engaged" %>
 				</li>
 				<li>
-					<%= image_tag "samstellaTBD2.jpg" %>
+					<%= image_tag "engaged2.jpg", :class => "engaged" %>
+				</li>
+			</ul>
+		</div>
+		<!-- /#landing -->
+
+		<div id="our-story" class="grid-container">
+			<div id="their-story" class="their-story">
+				<h3>Our Story</h3>
+				<p>Sam and Stella were on a date.  It was their second date; third if you count the walk they took to the Prudential Center for cookies at Paradise Bakery; fourth if you count the banana Stella brought Sam while he was working late at the library.  
+
+				<p>Sam knew Stella liked him.  A couple weeks before, Stella's roommate Cherylynn had made it all but perfectly clear:</p>
+
+				<%= image_tag "ourStory1.jpg", :class => "story1" %>
+
+				<div class="quote">
+					<p>Sam: Does Stella like me?</p>
+					<p>Cher: I don't knoooooooow. You should ask herrrrrrrrrrrr.</p>
+				</div>
+
+				<p>Stella knew Sam liked her. A couple nights before, he flat out told her.</p>
+				<div class="quote">
+					<p>Sam: I like you a lot.</p>
+					<p>Stella: I like you a lot.</p>
+					<p>Sam: ...Better get back to campus.</p>
+					<p>Stella: {He's a coward}</p>
+					<p>Sam: {I'm a coward}</p>
+				</div>
+
+				<p>So there they were, in a second-floor vegan Thai restaurant in Boston's Chinatown. Whatever they talked about was probably pretty plain.</p>
+
+				<p>Then Stella did something that, to her, was perfectly ordinary. She squeezed a lemon into her water and then ran her lemon-soaked fingers through her hair.</p>
+
+				<div class="quote">
+					<p>Sam: What did you just do?</p>
+					<p>Stella: I put lemon in my hair.  Lemon's good for hair.</p>
+					<p>Sam: ... [this was the 30-second paralysis a coward's mind undergoes when his life is about to change forever] ...</p>
+					<p>Stella: ...[this was 30 seconds of wondering, "Is he impressed? Is he confused? What's going on?"]</p>
+					<p>Sam: Will you go out with me?</p>
+					<p>Stella: Yes!</p>
+				</div>
+				<ul style="list-style:none;">
+					<li>
+						<%= image_tag "ourStory2.jpg", :class => "story2" %>
+					</li>
+				</ul>
+
+				<p>That was November 3, 2009.</p> 
+
+				<p>Sam finished school a month later and started working as a tour guide on the Freedom Trail.  Stella continued school and would pencil in time with Sam in between all her extracurricular activities. </p>
+
+				<p>In January, 2011, they moved to Los Angeles together.</p>
+
+				<p>Stella worked for a wine event start up and Sam parlayed an unpaid internship into his first paid TV gig.  Jobs came and went, Sam started doing yoga in the living room, Stella joined a yoga studio and got certified to teach; Sam wrote a few scripts, Stella freelanced a lot of events; Sam read a bunch of books, Stella obliged every time Sam asked, "Can I read this paragraph out loud to you? It's really something."</p>
+
+				<p>On April 19, 2015, Sam proposed.  And on May 22, 2016, Sam and Stella will be married.</p>
+
+				<p>They've come a long way from that second story vegan Thai restaurant in Boston's Chinatown.</p>   
+
+				<p>Stella still puts lemon in her hair.  Sam does too.</p>
+			</div>
+			<ul class="rig columns-4">
+				<li>
+					<%= image_tag "naps.jpg" %>
 				</li>
 				<li>
-					<%= image_tag "samstellaTBD3.jpg" %>
+					<%= image_tag "smirk.jpg" %>
 				</li>
 				<li>
-					<%= image_tag "samstellaTBD4.jpg" %>
+					<%= image_tag "losAngeles.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "branded.jpg" %>
 				</li>
 			</ul>
 		</div>
