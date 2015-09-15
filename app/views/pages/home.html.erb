@@ -7,14 +7,16 @@
 <body>
 
 <div class="wrapper">
-	<h1><a href="/" class="header-link">Sam &amp; Stella Are Getting Married!</a></h1>
+	<h1><a href="/" class="header-link">Sam &amp; Stella Are Getting Married</a><a href="#" data-id="surprise" class="header-link">!</a></h1>
 	<div class="container">
 		<ul class="grid-nav">
 			<li><a href="#" data-id="landing" class="active" style="display:none;">Lander</a></li>
+			<li><a href="#" data-id="surprise" style="display:none;">Surprise</a></li>
 			<li><a href="#" data-id="our-story">Our Story</a></li>
-			<li><a href="#" data-id="where-to-stay">Where To Stay</a></li>
-			<li><a href="#" data-id="what-to-do">What To Do</a></li>
+			<li><a href="#" data-id="the-wedding">The Wedding</a></li>
+			<li><a href="#" data-id="the-weekend">The Weekend</a></li>
 			<li><a href="#" data-id="rsvp" class="rsvp">RSVP</a></li>
+			<li><a href="#" data-id="registries" class="registries">Registries</a></li>
 		</ul>
 		
 		<hr />
@@ -30,6 +32,11 @@
 			</ul>
 		</div>
 		<!-- /#landing -->
+
+		<div id="surprise" class="grid-container">
+			Surprise!
+		</div>
+		<!-- /#surprise -->
 
 		<div id="our-story" class="grid-container">
 			<div id="their-story" class="their-story">
@@ -103,26 +110,30 @@
 		</div>
 		<!--/#our-story-->
 		
-		<div id="where-to-stay" class="grid-container">
-			<h3>Come back soon for more details!</h3>
-			<ul class="rig columns-2">
-				<li>
-					<%= image_tag "samstellaTBD2.jpg" %>
-				</li>
-				<li>
-					<%= image_tag "samstellaTBD4.jpg" %>
-				</li>
-				<li>
-					<%= image_tag "samstellaTBD1.jpg" %>
-				</li>
-				<li>
-					<%= image_tag "samstellaTBD3.jpg" %>
-				</li>
-			</ul>
+		<div id="the-wedding" class="grid-container">
+			<div id="their-wedding" class="their-wedding">
+				<h3>The Wedding</h3>
+				<div id="their-wedding-location" class="their-wedding-location">
+					<p>Location:</p>
+					<p>Lorimar Winery - Vineyard Lawn</p>
+					<p>39990 Anza Road, Temecula, CA 92592</p>
+				</div>
+				<div id="their-wedding-schedule" class="their-wedding-schedule">
+					<p>Schedule:</p>
+					<p>We encourage you to come early to check out Lorimar's Barrel Room, there is live music and wine tasting till 5 pm!</p>
+					<p>Ceremony at 5:15 pm</p>
+					<p>Dinner and dancing to follow</p>
+				</div>
+				<div id="their-wedding-attire" class="their-wedding-attire">
+					<p>Attire:</p>
+					<p>Please dress appropriately for a California summer. The wedding and reception are both outdoor events.</p>
+				</div>
+			</div>
+
 		</div>
-		<!--/#where-to-stay-->
+		<!--/#the-wedding-->
 		
-		<div id="what-to-do" class="grid-container">
+		<div id="the-weekend" class="grid-container">
 			<h3>Come back soon for more details!</h3>
 			<ul class="rig columns-2">
 				<li>
@@ -139,7 +150,7 @@
 				</li>
 			</ul>
 		</div>
-		<!--/#what-to-do-->
+		<!--/#the-weekend-->
 
 		<div id="rsvp" class="grid-container">
 			<h3>Come back soon for more details!</h3>
@@ -159,6 +170,25 @@
 			</ul>
 		</div>
 		<!-- /#rsvp -->
+
+		<div id="registries" class="grid-container">
+			<h3>Come back soon for more details!</h3>
+			<ul class="rig columns-2">
+				<li>
+					<%= image_tag "samstellaTBD1.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD2.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD3.jpg" %>
+				</li>
+				<li>
+					<%= image_tag "samstellaTBD4.jpg" %>
+				</li>
+			</ul>
+		</div>
+		<!-- /#registries -->
 		
 		<hr />
 		
