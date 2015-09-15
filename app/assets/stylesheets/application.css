@@ -154,6 +154,9 @@ ul.rig.columns-3 li {
 ul.rig.columns-4 li {
 	width: 22.5%; /* this value + 2.5 should = 25% */
 }
+ul.rig.columns-6 li {
+	width: 14.16%; /* this value +2.5 should = 16 */
+}
 @media only screen and (max-width: 768px) {
 	ul.engaged.rig.columns-2 li {
 		width: 97.5%;
@@ -169,12 +172,37 @@ a.header-link {
 	color: #3C3C3D;
 	text-decoration: none;
 }
-.their-story {
+/* general tab styls */
+#section {
 	font-size: 1em;
 	margin: 0 auto;
 	padding-bottom: 50px;
 	width: 75%;
 }
+@media (max-width: 768px) {
+	#section {
+		width: 100%;
+	}
+	#section p {
+		font-size: 1em;
+	}
+}
+#details {
+	padding-top: 2%;
+}
+#details p a {
+	text-decoration: none;
+}
+#details-expanded {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+}
+#details-expanded p a {
+	text-decoration: none;
+}
+
+/* "our story" tab */
 .their-story h3 {
 	font-size: 2em;
 }
@@ -231,12 +259,6 @@ img.story2 {
 	padding: 5px;
 }
 @media (max-width: 768px) {
-	.their-story {
-		width: 100%;
-	}
-	.their-story p {
-		font-size: 1em;
-	}
 	.quote {
 		font-size: 0.8em;
 	}
@@ -244,3 +266,28 @@ img.story2 {
 .their-story p {
 	padding-top: 15px;
 }
+
+/* "the wedding" tab */
+
+
+/* "the weekend tab" */
+.their-weekend {
+
+}
+.their-weekend-airports {
+
+}
+.their-weekend-airports a li {
+	font-size: 12px;
+}
+.their-weekend-airports a li p {
+	padding-top: 5%;
+}
+.airport-images {
+
+}
+
+/* "rsvp" tab */
+
+
+/* "registries" tab */

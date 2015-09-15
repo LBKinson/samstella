@@ -24,10 +24,10 @@
 		<div id="landing" class="grid-container" style="display:block;">
 			<ul class="engaged rig columns-2">
 				<li>
-					<%= image_tag "engaged1.jpg", :class => "engaged" %>
+					<%= image_tag "engaged1.jpg", :class => "engaged", :alt => "Sam and Stella are engaged!" %>
 				</li>
 				<li>
-					<%= image_tag "engaged2.jpg", :class => "engaged" %>
+					<%= image_tag "engaged2.jpg", :class => "engaged", :alt => "Sam and Stella are engaged!" %>
 				</li>
 			</ul>
 		</div>
@@ -39,13 +39,13 @@
 		<!-- /#surprise -->
 
 		<div id="our-story" class="grid-container">
-			<div id="their-story" class="their-story">
+			<div id="section" class="their-story">
 				<h3>Our Story</h3>
 				<p>Sam and Stella were on a date.  It was their second date; third if you count the walk they took to the Prudential Center for cookies at Paradise Bakery; fourth if you count the banana Stella brought Sam while he was working late at the library.  
 
 				<p>Sam knew Stella liked him.  A couple weeks before, Stella's roommate Cherylynn had made it all but perfectly clear:</p>
 
-				<%= image_tag "ourStory1.jpg", :class => "story1" %>
+				<%= image_tag "ourStory1.jpg", :class => "story1", :alt => "they definitely like each other" %>
 
 				<div class="quote">
 					<p>Sam: Does Stella like me?</p>
@@ -75,7 +75,7 @@
 				</div>
 				<ul style="list-style:none;">
 					<li>
-						<%= image_tag "ourStory2.jpg", :class => "story2" %>
+						<%= image_tag "ourStory2.jpg", :class => "story2", :alt => "Heartland, land of hearts" %>
 					</li>
 				</ul>
 
@@ -95,37 +95,37 @@
 			</div>
 			<ul class="rig columns-4">
 				<li>
-					<%= image_tag "naps.jpg" %>
+					<%= image_tag "naps.jpg", :alt => "hammocks are for naps" %>
 				</li>
 				<li>
-					<%= image_tag "smirk.jpg" %>
+					<%= image_tag "smirk.jpg", :alt => "headshots are for smirks" %>
 				</li>
 				<li>
-					<%= image_tag "losAngeles.jpg" %>
+					<%= image_tag "losAngeles.jpg", :alt => "lots are for walks" %>
 				</li>
 				<li>
-					<%= image_tag "branded.jpg" %>
+					<%= image_tag "branded.jpg", :alt => "beers are for cheers" %>
 				</li>
 			</ul>
 		</div>
 		<!--/#our-story-->
 		
 		<div id="the-wedding" class="grid-container">
-			<div id="their-wedding" class="their-wedding">
+			<div id="section" class="their-wedding">
 				<h3>The Wedding</h3>
-				<div id="their-wedding-location" class="their-wedding-location">
-					<p>Location:</p>
+				<div id="details" class="their-wedding-location">
+					<h4>Location:</h4>
 					<p>Lorimar Winery - Vineyard Lawn</p>
 					<p>39990 Anza Road, Temecula, CA 92592</p>
 				</div>
-				<div id="their-wedding-schedule" class="their-wedding-schedule">
-					<p>Schedule:</p>
+				<div id="details" class="their-wedding-schedule">
+					<h4>Schedule:</h4>
 					<p>We encourage you to come early to check out Lorimar's Barrel Room, there is live music and wine tasting till 5 pm!</p>
 					<p>Ceremony at 5:15 pm</p>
 					<p>Dinner and dancing to follow</p>
 				</div>
-				<div id="their-wedding-attire" class="their-wedding-attire">
-					<p>Attire:</p>
+				<div id="details" class="their-wedding-attire">
+					<h4>Attire:</h4>
 					<p>Please dress appropriately for a California summer. The wedding and reception are both outdoor events.</p>
 				</div>
 			</div>
@@ -134,36 +134,79 @@
 		<!--/#the-wedding-->
 		
 		<div id="the-weekend" class="grid-container">
-			<div id="their-weekend" class= "their-weekend">
+			<div id="section" class= "their-weekend">
 				<h3>The Weekend</h3>
-				<div id="their-weekend-getting-there" class="their-weekend-getting-there">
-					<p>Getting to Temecula:</p>
+				<div id="details" class="their-weekend-getting-there">
+					<h4>Getting to Temecula:</h4>
 					<p>Temecula is located an hour and a half south east of LA.</p>
-					<p>If you are flying in, there are lots of options! The closest and largest airports are: *TODO: airport logos* San Diego International Airport (SAN) - 62 miles, Los Angeles International Airport (LAX) - 92 miles and John Wayne Airport-Orange County (SNA) - 66 miles. You can also look at LA/Ontario International Airport (ONT) - 54 miles, Long Beach (LGB) - 80 miles, Burbank (BUR) - 99 miles.</p>
-					<p>Google Flights is a great resource to explore all your options.</p>
+					<p>If you are flying in, there are lots of options! The closest and largest airports are:</p>
+					<div id="details-expanded" class="their-weekend-airports">
+						<ul class="rig columns-6">
+							<a href="http://www.san.org/" alt="San Diego International Airport" target="_blank">
+								<li>
+									<%= image_tag "airports/san.jpg", :class => "airport-images", :alt => "ontario" %>
+									<p>62 miles, SAN</p>
+								</li>
+							</a>
+							<a href="http://www.lawa.org/welcomeLAX.aspx" alt="Los Angeles International Airport" target="_blank">
+								<li>
+									<%= image_tag "airports/lax2.jpg", :class => "airport-images", :alt => "los angeles" %>
+									<p>92 miles, LAX</p>
+								</li>
+							</a>
+							<a href="http://www.ocair.com/" alt="John Wayne Airport Orange County" target="_blank">
+								<li>
+									<%= image_tag "airports/sna.jpg", :class => "airport-images", :alt => "ontario" %>
+									<p>66 miles, SNA</p>
+								</li>
+							</a>
+							<a href="http://www.lawa.org/welcomeONT.aspx" alt="Ontario International Airport" target="_blank">
+								<li>
+									<%= image_tag "airports/ont.jpg", :class => "airport-images", :alt => "ontario" %>
+									<p>54 miles, ONT</p>
+								</li>
+							</a>
+							<a href="http://www.lgb.org/" alt="Long Beach Airport" target="_blank">
+								<li>
+									<%= image_tag "airports/lgb.jpg", :class => "airport-images", :alt => "long beach" %>
+									<p>80 miles, LGB</p>
+								</li>
+							</a>
+							<a href="http://www.burbankairport.com/" alt="Burbank Bob Hope Airport" target="_blank">
+								<li>
+									<%= image_tag "airports/bur.jpg", :class => "airport-images", :alt => "burbank" %>
+									<p>99 miles, BUR</p>
+								</li>
+							</a>
+						</ul>
+					</div>
+
+					<p><b><a href="https://www.google.com/flights/" alt="check out Google Flights!" target="_blank">Google Flights</a></b> is a great resource to explore all your options.</p>
 				</div>
-				<div id="their-weekend-get-around" class="their-weekend-get-around">
-					<p>How to get around:</p>
+				<div id="details" class="their-weekend-get-around">
+					<h4>How to get around:</h4>
 					<p>Please don't drink and drive. Lorimar has graciously allowed us to keep cars overnight (if needed) - you can always Lyft, Uber or taxi to the wedding venue from wherever you are staying.</p>
 				</div>
-				<div id="their-weekend-stay" class="their-weekend-stay">
+				<div id="details" class="their-weekend-stay">
+					<h4>Where to stay:</h4>
 					<p>There are amazing houses for rent on AirBnB and VRBO.</p>
 					<p>We also have a blocks of rooms reserved at *TODO: DETAILS* (just a 10 minute drive away) and *TODO: DETAILS* (walking distance to the winery!)</p>
 				</div>
-				<div id="their-weekend-to-do" class="their-weekend-to-do">
+				<div id="details" class="their-weekend-to-do">
+					<h4>What to do:</h4>
 					<p>We love discovering new places and have tons of favorite spots all over Southern California.</p>
 					<p>Check out our favorites:</p>
 					<p>TODO: insert MAP</p>
 				</div>
-				<div id="their-weekend-join-us" class="their-weekend-join-us"</div>
-					<p>Coming for the Weekend? Join us for:</p>
-					<div id="welcome-wine" class="welcome-wine">
+				<div id="details" class="their-weekend-join-us"</div>
+					<h4>Coming for the Weekend? Join us for:</h4>
+					<div id="details-expanded" class="welcome-wine">
 						<p><i>Welcome Wine Event</i></p>
 						<p>If you are in town on Saturday, please join us for a glass of wine at the Que Syrah House.</p>
 						<p>Saturday, May 21, 2016</p>
 						<p>3 o'clock in the afternoon</p>
 					</div>
-					<div id="namaste" class="namaste">
+					<div id="details-expanded" class="namaste">
 						<p><i>The couple that namastes together stays together!</i></p>
 						<p>Join us for yoga on Sunday morning before the festivities.</p>
 						<p>Yoga at TBD</p>
