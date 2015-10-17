@@ -207,6 +207,10 @@ a.header-link {
 #details-expanded p a {
 	text-decoration: none;
 }
+#details-form {
+	margin-left: 2.5%;
+	padding-top: 15px;
+}
 
 /* "our story" tab */
 img.story1 {
