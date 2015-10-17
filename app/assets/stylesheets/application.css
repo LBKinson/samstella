@@ -273,6 +273,9 @@ img.story2 {
 .their-story p {
 	padding-top: 15px;
 }
+#their-story-ending {
+	padding-top: 55px;
+}
 
 /* "the wedding" tab */
 @media (min-width: 769px) {
@@ -298,6 +301,10 @@ img.story2 {
 .airport-images {
 
 }
+.hotel-images {
+	margin-bottom: -0.2%;
+	width: 65px;
+}
 .details-map {
 
 }
@@ -309,7 +316,7 @@ img.story2 {
 
 /* "rsvp" tab */
 .details-form {
-	framborder: 0;
+	frameborder: 0;
 	height: 500px;
 	marginheight: 0;
 	marginwidth: 0;

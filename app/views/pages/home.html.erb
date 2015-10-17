@@ -92,21 +92,21 @@
 				<p>They've come a long way from that second story vegan Thai restaurant in Boston's Chinatown.</p>   
 
 				<p>Stella still puts lemon in her hair.  Sam does too.</p>
+				<ul id="their-story-ending" class="rig columns-4">
+					<li>
+						<%= image_tag "naps.jpg", :alt => "hammocks are for naps" %>
+					</li>
+					<li>
+						<%= image_tag "smirk.jpg", :alt => "headshots are for smirks" %>
+					</li>
+					<li>
+						<%= image_tag "losAngeles.jpg", :alt => "lots are for walks" %>
+					</li>
+					<li>
+						<%= image_tag "branded.jpg", :alt => "beers are for cheers" %>
+					</li>
+				</ul>
 			</div>
-			<ul class="rig columns-4">
-				<li>
-					<%= image_tag "naps.jpg", :alt => "hammocks are for naps" %>
-				</li>
-				<li>
-					<%= image_tag "smirk.jpg", :alt => "headshots are for smirks" %>
-				</li>
-				<li>
-					<%= image_tag "losAngeles.jpg", :alt => "lots are for walks" %>
-				</li>
-				<li>
-					<%= image_tag "branded.jpg", :alt => "beers are for cheers" %>
-				</li>
-			</ul>
 		</div>
 		<!--/#our-story-->
 		
@@ -116,12 +116,12 @@
 				<div id="details" class="their-wedding-location">
 					<h4>Location:</h4>
 					<p>Lorimar Winery - Vineyard Lawn</p>
-					<p>39990 Anza Road, Temecula, CA 92592</p>
+					<p><a href="https://www.google.com/maps/place/Lorimar+Vineyards+and+Winery/@33.5163226,-117.1740298,12z/data=!4m5!1m2!2m1!1slorimar+winery!3m1!1s0x80db793cb6ee4d2b:0x80265372cc5279c3?hl=en" target="_blank">39990 Anza Road, Temecula, CA 92592</a></p>
 				</div>
 				<div id="details" class="their-wedding-schedule">
 					<h4>Schedule:</h4>
 					<p>We encourage you to come early to check out Lorimar's Barrel Room, there is live music and wine tasting till 5 pm!</p>
-					<p>Ceremony at 5:15 pm</p>
+					<p>Ceremony at <strong>5:15 pm</strong></p>
 					<p>Dinner and dancing to follow</p>
 				</div>
 				<div id="details" class="their-wedding-attire">
@@ -196,7 +196,7 @@
 				</div>
 				<div id="details" class="their-weekend-stay">
 					<h4>Where to stay:</h4>
-					<p>There are amazing houses for rent on AirBnB and VRBO.</p>
+					<p>There are amazing houses for rent on <a href="http://www.airbnb.com" alt="stay with airbnb!" target="_blank"><%= image_tag "hotels/airbnb.png", :class => "hotel-images", :alt => "airbnb" %></a> and <a href="http://www.vrbo.com" alt="stay with vrbo!" target="_blank"><%= image_tag "hotels/vrbo.png", :class => "hotel-images", :alt => "vrbo" %></a></p>
 					<p>We also have a blocks of rooms reserved at *TODO: DETAILS* (just a 10 minute drive away) and *TODO: DETAILS* (walking distance to the winery!)</p>
 				</div>
 				<div id="details" class="their-weekend-to-do">
@@ -257,22 +257,24 @@
 		<!-- /#rsvp -->
 
 		<div id="registries" class="grid-container">
-			<h3>Registries</h3>
-			<h3>Come back soon for more details!</h3>
-			<ul class="rig columns-4">
-				<li>
-					<%= image_tag "samstellaTBD1.jpg" %>
-				</li>
-				<li>
-					<%= image_tag "samstellaTBD2.jpg" %>
-				</li>
-				<li>
-					<%= image_tag "samstellaTBD3.jpg" %>
-				</li>
-				<li>
-					<%= image_tag "samstellaTBD4.jpg" %>
-				</li>
-			</ul>
+			<div id="section" class="their-registries">
+				<h3>Registries</h3>
+				<h3>Come back soon for more details!</h3>
+				<ul class="rig columns-4">
+					<li>
+						<%= image_tag "samstellaTBD1.jpg" %>
+					</li>
+					<li>
+						<%= image_tag "samstellaTBD2.jpg" %>
+					</li>
+					<li>
+						<%= image_tag "samstellaTBD3.jpg" %>
+					</li>
+					<li>
+						<%= image_tag "samstellaTBD4.jpg" %>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<!-- /#registries -->
 		
