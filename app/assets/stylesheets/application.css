@@ -56,7 +56,7 @@ hr {
 	width: 500px;
 	margin: 0 auto;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1599px) {
 	.container {
 		width: auto;
 		padding: 0 10px;
