@@ -86,6 +86,9 @@ ul.grid-nav li a {
 		font-weight: bold;
 	}
 }
+ul.grid-nav li a.address {
+	background: #B5B3AA;
+}
 ul.grid-nav li a.rsvp {
 	background: #B5B3AA;
 }
@@ -178,7 +181,7 @@ a.header-link {
 	color: #3C3C3D;
 	text-decoration: none;
 }
-/* general tab styls */
+/* general tab styles */
 #section {
 	font-size: 1em;
 	margin: 0 auto;
@@ -210,6 +213,14 @@ a.header-link {
 #details-form {
 	margin-left: 2.5%;
 	padding-top: 15px;
+}
+/* "landing" tab */
+/* invisible tab in nav */
+
+
+/* "surprise" tab */
+.surprise-tab {
+	visibility: hidden;
 }
 
 /* "our story" tab */
@@ -314,13 +325,15 @@ img.story2 {
 	}
 }
 
+/* "address request" tab */
+
+
+
 /* "rsvp" tab */
 .details-form {
 	frameborder: 0;
-	height: 500px;
 	marginheight: 0;
 	marginwidth: 0;
-	width: 760px;
 }
 @media (max-width: 768px) {
 	.details-form {
