@@ -296,6 +296,10 @@ img.story1 {
 		width: 50%;
 	}
 }
+#their-wedding-date {
+	font-size: 1.25em;
+	text-align: center;
+}
 
 /* "the weekend tab" */
 .their-weekend {
