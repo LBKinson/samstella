@@ -224,7 +224,7 @@ a.header-link {
 }
 
 /* "our story" tab */
-img.story1 {
+img.story2 {
 	width: 25%;
 	float: right;
 	display: inline-block;
@@ -241,11 +241,11 @@ img.story1 {
 	-webkit-box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
-	img.story1 {
+	img.story2 {
 		width: 50%;
 	}
 }
-img.story2 {
+img.story1 {
 	width: 45%;
 	float: right;
 	display: inline-block;
@@ -262,7 +262,7 @@ img.story2 {
 	-webkit-box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
-	img.story2 {
+	img.story1 {
 		width: 100%;
 	}
 }
