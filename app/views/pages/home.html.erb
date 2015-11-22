@@ -309,16 +309,16 @@
 				<br>
 				<ul class="rig columns-4">
 					<li>
-						<%= image_tag "samstellaTBD3.jpg" %>
-					</li>
-					<li>
 						<%= image_tag "samstellaTBD1.jpg" %>
 					</li>
 					<li>
-						<%= image_tag "samstellaTBD4.jpg" %>
+						<%= image_tag "samstellaTBD2.jpg" %>
 					</li>
 					<li>
-						<%= image_tag "samstellaTBD2.jpg" %>
+						<%= image_tag "samstellaTBD3.jpg" %>
+					</li>
+					<li>
+						<%= image_tag "samstellaTBD4.jpg" %>
 					</li>
 				</ul>
 			</div>
@@ -328,8 +328,26 @@
 		<div id="registries" class="grid-container">
 			<div id="section" class="their-registries">
 				<h4>We have registries at the following stores:</h4>
-				<p>AMAZON TODO: link & logo</p>
-				<p>BBB TODO: link & logo</p>
+				<div id="details-expanded" class="their-registries-stores">
+					<ul class="rig columns-3">
+						<a href="https://www.amazon.com/registry/wedding/ZU87RSME0PGY" alt="Sam & Stella are registered at Amazon!" target="_blank">
+							<li>
+								<%= image_tag "registries/amazon3.png", :class => "registries-images", :alt => "amazon" %>
+							</li>
+						</a>
+						<a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=542793388&eventType=Wedding" target="_blank">
+							<li>
+								<%= image_tag "registries/bedbathbeyond.png", :class => "registries-images", :alt => "bed bath beyond" %>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<div id="details" class="their-registries-note">
+					<h4>We love handmade gifts!</h4>
+					<p>We are starting collections of pottery and glass from Penland artists, if you would like to buy us something handmade please reach out to Stella's mom, Geraldine Plato, and she can help you pick out the perfect present.</p>
+					<p>geraldineplato@gmail.com</p>
+					<p>www.penland.org</p>
+				</div>
 
 
 				<ul class="rig columns-4">

@@ -412,3 +412,18 @@ img.lorimar2 {
 }
 
 /* "registries" tab */
+.their-registries-stores {
+
+}
+.their-registries-stores a li {
+	font-size: 12px;
+}
+.their-registries-stores a li p {
+	padding-top: 5%;
+}
+.registries-images {
+	height: 100px;	
+}
+.their-registries-note {
+	padding-bottom: 15%;
+}
