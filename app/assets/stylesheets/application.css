@@ -471,7 +471,14 @@ img.lorimar2 {
 
 
 /* "address request" tab */
+.their-rsvp-form {
 
+}
+@media (max-width: 768px) {
+	..their-rsvp-form {
+		width: 100%;
+	}
+}
 
 
 /* "rsvp" tab */
