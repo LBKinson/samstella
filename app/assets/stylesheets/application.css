@@ -467,6 +467,9 @@ img.lorimar2 {
 		-moz-column-count: 1;
 		column-count: 1;
 	}
+	.pin img {
+		width: 100%;
+	}
 }
 
 
