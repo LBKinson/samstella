@@ -499,6 +499,9 @@ img.lorimar2 {
 }
 
 /* "registries" tab */
+.their-registries a {
+	text-decoration: none;
+}
 .their-registries-stores {
 
 }
@@ -512,5 +515,5 @@ img.lorimar2 {
 	height: 100px;	
 }
 .their-registries-note {
-	padding-bottom: 15%;
+	padding-bottom: 10%;
 }
