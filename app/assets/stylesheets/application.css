@@ -216,6 +216,21 @@ a.header-link {
 }
 /* "landing" tab */
 /* invisible tab in nav */
+.landing-text {
+	padding: 0 0 1em 0;
+	text-align: center;
+}
+.landing-intro {
+	font-size: 1.5em;
+}
+.landing-outro {
+	font-size: 0.85em;
+	padding-top: 1em;
+}
+.landing-outro a {
+	color: inherit;
+	text-decoration: none;
+}
 
 /* "surprise" tab */
 .surprise-tab {
