@@ -466,13 +466,20 @@ img.lorimar2 {
 }
 
 @media (max-width: 768px) {
+	#wrapper {
+		min-width: 100%;
+	}
 	#columns {
+		width: 100%;
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
 		column-count: 1;
 	}
 	.pin img {
 		width: 100%;
+	}
+	.pin {
+		width: 90%;
 	}
 }
 
