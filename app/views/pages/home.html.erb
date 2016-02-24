@@ -11,8 +11,8 @@
 	<div class="container">
 		<ul class="grid-nav">
 			<li><a href="#" data-id="our-story">Story</a></li>
-			<li><a href="#" data-id="the-wedding">Wedding</a></li>
-			<li><a href="#" data-id="the-weekend">Weekend</a></li>
+			<li><a href="#" data-id="the-wedding">Events</a></li>
+			<li><a href="#" data-id="the-weekend">Travel</a></li>
 			<li><a href="#" data-id="the-wedding-party">Wedding Party</a></li>
 			<!-- <li><a href="#" data-id="rsvp" class="rsvp" style="display:none;">RSVP</a></li> -->
 			<li><a href="#" data-id="registries" class="registries">Registries</a></li>
@@ -22,7 +22,7 @@
 		
 		<div id="landing" class="grid-container" style="display:block;">
 			<div id="landing-text" class="landing-text">
-				<p class="landing-intro">We're so excited for you to come celebrate with us on May 22! <br>Check back here for updates and more details as the wedding gets closer.</p>
+				<p class="landing-intro">We're so excited for you to come celebrate with us on May 22!</p>
 				<p class="landing-outro">Special thanks to <a href="http://www.lbkinson.com" alt="LBKinson" target="_blank">Laura Kinson for designing and building this site and <a href="http://www.amaiettaphotography.com/" alt="Ashley Maietta photography" target="_blank">Ashley Maietta</a> for her photography!</p>
 			</div>
 			<ul class="engaged rig columns-2">
@@ -117,7 +117,37 @@
 		
 		<div id="the-wedding" class="grid-container">
 			<div id="section" class="their-wedding">
-				<h3>The Wedding</h3>
+				<h3>Welcome Party</h3>
+				<div id="details" class="their-wedding-location">
+					<h4>Location:</h4>
+					<p>1909 Temecula</p>
+					<p><a href="https://www.google.com/maps/place/1909+Temecula/@33.4933432,-117.1506353,17z/data=!4m7!1m4!3m3!1s0x80db7fbf35134697:0x7e36d3bbe9d26583!2s28656+Old+Town+Front+St,+Temecula,+CA+92590!3b1!3m1!1s0x80db7fbf3514baed:0x4a76c3adfcd2a57a" target="_blank">28656 Old Town Front St, <br>Temecula, CA 92590</a></p>
+
+					<ul style="list-style:none;">
+						<a href="http://www.1909temecula.com/" alt="1909 Temecula" target="_blank">
+							<li>
+								<%= image_tag "1909-1.jpg", :class => "lorimar2", :alt => "" %>
+							</li>
+						</a>
+						<a href="http://www.1909temecula.com/" alt="1909 Temecula" target="_blank">
+							<li>
+								<%= image_tag "1909-2.jpg", :class => "lorimar5", :alt => "" %>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<div id="details" class="their-wedding-date">
+					<h4>Date:</h4>
+					<p>Saturday, May 21, 2016</p>
+				</div>
+				<div id="details" class="their-wedding-schedule">
+					<h4>Schedule:</h4>
+					<p>Drinks at <strong>2:30 pm</strong></p>
+					<p class="side-note"><i>We're getting the party started early on Saturday!  Come join us for an afternoon drink at the <a href="http://www.1909temecula.com/" target="_blank">1909 Temecula</a> in Old Town Temecula.  We'll have the patio to ourselves for a couple hours of seeing old friends, meeting new ones, and simply chilling out after everyone's journey to Temecula Wine Country.</i></p>
+				</div>
+
+				<br><br>
+				<h3>Ceremony &amp; Reception</h3>
 				<div id="details" class="their-wedding-location">
 					<h4>Location:</h4>
 					<p>Lorimar Winery - Vineyard Lawn</p>
@@ -143,8 +173,8 @@
 				<div id="details" class="their-wedding-schedule">
 					<h4>Schedule:</h4>
 					<p>Ceremony at <strong>5:15 pm</strong></p>
-					<p>Dinner and dancing to follow</p>
-					<p class="side-note"><i>If you arrive early, check out Lorimar's Barrel Room, where there will be live music and wine tasting until 5:00 pm! It's just a few hundred feet from the wedding lawn and parking lot.</i></p>
+					<p>Dinner and dancing to follow - the last song will play at 9:55 pm!</p>
+					<p class="side-note"><i>Avoid Hot Air Balloon Festival traffic...come have a tasting at Lorimar, we'll have two-for-one tasting cards for you.</i></p>
 				</div>
 				<div id="details" class="their-wedding-attire">
 					<h4>Attire:</h4>
@@ -164,9 +194,14 @@
 		
 		<div id="the-weekend" class="grid-container">
 			<div id="section" class= "their-weekend">
-				<h3>The Weekend</h3>
+				<div id="details-advisory" class="their-weekend-advisory">
+					<h4>ADVISORY: Temecula Hot Air Balloon Festival</h4>
+					<p>The <a href="http://www.tvbwf.com/">Temecula Hot Air Balloon Festival</a> is being held throughout our wedding weekend and is located just a few miles from our wedding venue.</p>
+					<p>This could lead to congested traffic on Saturday and Sunday.  We will have updates closer to the date, but we ask that you please plan to budget extra time to allow for sitting in some traffic.</p>
+					<p>We also encourage you to book accommodations sooner than later, as the Festival may impact room/rental rates.</p>
+				</div>
 				<div id="details" class="their-weekend-getting-there">
-					<h4>How to get here:</h4>
+					<h3>How To Get Here</h3>
 					<p>Temecula is located an hour and a half south east of LA.</p>
 					<p>If you are flying in, there are lots of options! The closest and largest airports are:</p>
 					<div id="details-expanded" class="their-weekend-airports">
@@ -213,39 +248,17 @@
 					<p><b><a href="https://www.google.com/flights/" alt="check out Google Flights!" target="_blank">Google Flights</a></b> is a great resource to explore all your options.</p>
 				</div>
 				<div id="details" class="their-weekend-get-around">
-					<h4>How to get around:</h4>
+					<h3>How To Get Around</h3>
 					<p>Please don't drink and drive. Lorimar has graciously allowed us to keep cars overnight (if needed) - you can always Lyft, Uber or taxi to the wedding venue from wherever you are staying.</p>
 				</div>
 				<div id="details" class="their-weekend-stay">
-					<h4>Where to stay:</h4>
+					<h3>Where To Stay</h3>
 					<p>We're not doing a formal room block. The closest hotel to our venue is <a href="http://www.southcoastwinery.com/" alt="South Coast Winery Resort & Spa" target="_blank">South Coast Winery Resort &amp; Spa</a> (2 blocks from Lorimar). </p>
 					<p class="side-note">For more affordable options, check out <a href="http://www.estemecula.com/" alt="Embassy Suites" target="_blank">Temecula's Embassy Suites</a> or the <a href="http://www.marriott.com/hotels/travel/ontrt-fairfield-inn-and-suites-temecula/" alt="Fairfield Inn & Suites Temecula" target="_blank">Fairfield Inn &amp; Suites Temecula</a>, both are a 15 - 20 minute drive from Lorimar.</p>
 					<p class="side-note">There are amazing houses for rent on <a href="http://www.airbnb.com" alt="stay with airbnb!" target="_blank"><%= image_tag "hotels/airbnb.png", :class => "hotel-images", :alt => "airbnb" %></a> and <a href="http://www.vrbo.com" alt="stay with vrbo!" target="_blank"><%= image_tag "hotels/vrbo.png", :class => "hotel-images", :alt => "vrbo" %></a></p>
 
-					<div id="details" class="their-weekend-join-us"</div>
-						<h4>WELCOME PARTY</h4>
-						<p>We're getting the party started early on Saturday!  Come join us for an afternoon drink at the 1909 Temecula in Old Town Temecula.  We'll have the patio to ourselves for a couple hours of seeing old friends, meeting new ones, and simply chilling out after everyone's journey to Temecula Wine Country. </p>
-
-						<br>
-						<p><a href="http://www.1909temecula.com/">1909 Temecula</a> is located at <a href="https://www.google.com/maps/place/1909+Temecula/@33.4933432,-117.1506353,17z/data=!4m7!1m4!3m3!1s0x80db7fbf35134697:0x7e36d3bbe9d26583!2s28656+Old+Town+Front+St,+Temecula,+CA+92590!3b1!3m1!1s0x80db7fbf3514baed:0x4a76c3adfcd2a57a">28656 Old Town Front St, Temecula, CA 92590</a></p>
-						<br>
-
-						<h4>ADVISORY: TEMECULA HOT AIR BALLOON FESTIVAL</h4>
-						<p>The <a href="http://www.tvbwf.com/">Temecula Hot Air Balloon Festival</a> is being held throughout our wedding weekend and is located just a few miles from our wedding venue.</p>
-						<p>This could lead to congested traffic on Saturday and Sunday.  We will have updates closer to the date, but we ask that you please plan to budget extra time to allow for sitting in some traffic.</p>
-						<p>We also encourage you to book accommodations sooner than later, as the Festival may impact room/rental rates.</p>
-						
-						<!--/
-						<div id="details-expanded" class="welcome-wine">
-							<!--/ for welcome wine event 
-						</div>
-						<div id="details-expanded" class="namaste">
-							<!-- for yoga event
-						</div> -->
-					</div>
-
 					<div id="details" class="their-weekend-to-do">
-						<h4>What to do:</h4>
+						<h3>What To Do</h3>
 						<p>We love discovering new places and have tons of favorite spots all over Southern California.</p>
 						<p>Check out our favorites:</p>
 						<div id="details-expanded" class="their-weekend-map">

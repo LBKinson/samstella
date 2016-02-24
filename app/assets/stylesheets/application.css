@@ -375,6 +375,16 @@ img.lorimar2 {
 .their-weekend {
 
 }
+.their-weekend-advisory {
+	background-color: rgba(181, 179, 170, 0.15);
+	margin: 1% 0 0 0;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	width: 100%;
+}
+.their-weekend-advisory p {
+	padding-top: 0.5em;
+}
 .their-weekend-airports {
 
 }
@@ -386,6 +396,9 @@ img.lorimar2 {
 }
 .airport-images {
 
+}
+.their-weekend #details {
+		padding-top: 1.5em !important;
 }
 .their-weekend-stay .side-note {
 	padding-top: 0.5em;
